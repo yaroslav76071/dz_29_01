@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.post{
+	position: relative;
+	cursor: pointer;
+}
+.in-post{
+	max-width: 400px;
+	height: auto;
+	border-radius: 15px;
+}
+.like{
+	font-size: 24px;
+	color: #000;
+}
+.dislike{
+	font-size: 24px;
+	color: #000;
+}
+.heart{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.7));
+	transform-origin: center center;
+	width: 0;
+}
+
+.ani-like{
+	animation: 2s ani ease-in-out forwards;
+}
+
+@keyframes ani {
+	0%{
+		width: 0;
+	}
+	10%{
+		width: 150px;
+	}
+	20%{
+		width: 120px;
+	}
+	40%{
+		width: 130px;
+	}
+	50%, 100%{
+		width: 0;
+	}
+}
+.like1{
+	width: 25px;
+	height: 25px;
+}
+.comment{
+	width: 375px;
+	height: 50px;
+	text-align: center;
+}
+.submit{
+	width: 90px;
+	height: 25px;
+	margin-top: 10px;
+}
